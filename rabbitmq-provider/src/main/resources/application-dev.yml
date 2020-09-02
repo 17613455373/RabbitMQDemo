@@ -4,6 +4,8 @@ spring:
   #给项目来个名字
   application:
     name: rabbitmq-provider
+  profiles:
+    active: dev
   #配置rabbitMq 服务器
   rabbitmq:
     host: 182.92.9.199
