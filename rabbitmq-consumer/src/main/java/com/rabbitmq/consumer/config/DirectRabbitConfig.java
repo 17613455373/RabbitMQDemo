@@ -7,7 +7,7 @@ import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;
 
 /**
- * @description:
+ * @description: Direct Exchange轮询交换机
  * @author: Huitengxian
  * @time: 2020/9/2 18:05
  */

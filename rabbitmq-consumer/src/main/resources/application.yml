@@ -1,0 +1,4 @@
+#测试环境
+spring:
+  profiles:  #指定执行环境
+    active: @package.environment@

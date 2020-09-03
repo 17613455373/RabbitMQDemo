@@ -1,4 +1,4 @@
-package com.rabbitmq.provider.config;
+package com.rabbitmq.provider.rabbitConfig;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @description:
+ * @description: Direct Exchange轮询交换机
  * @author: Huitengxian
  * @time: 2020/9/2 14:48
  */

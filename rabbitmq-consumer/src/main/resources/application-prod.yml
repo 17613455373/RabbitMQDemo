@@ -1,33 +1,27 @@
-#测试环境
+#正式环境
 server:
-  port: 8021
+  port: 8022
 spring:
   #给项目来个名字
   application:
     name: rabbitmq-provider
   profiles:
-    active: dev
+    active: pro
   #配置rabbitMq 服务器
   rabbitmq:
-    host: 182.92.9.199
+    host: 172.17.222.9
     port: 5672
     username: admin
     password: 123456
     #虚拟host 可以不设置,使用server默认host
     virtual-host: my_vhost
-
-    #确认消息已发送到交换机(Exchange)
-    publisher-confirm-type: correlated
-    #确认消息已发送到队列(Queue)
-    publisher-returns: true
-
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://rm-2ze7d245emkcf44e1uo.mysql.rds.aliyuncs.com:3306/helloworld?useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://rm-2ze7d245emkcf44e1125010.mysql.rds.aliyuncs.com:3306/helloworld?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: huitengxian
     password: htx666666
 file:
   upload:
     path: /static/file/
   download:
-    path: http://182.92.9.199:8233
+    path: http://172.17.222.9:8233
