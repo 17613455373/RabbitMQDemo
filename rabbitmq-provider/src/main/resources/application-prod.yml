@@ -20,6 +20,17 @@ spring:
     publisher-confirm-type: correlated
     #确认消息已发送到队列(Queue)
     publisher-returns: true
+  redis:
+    host: 182.92.9.199
+    port: 6379
+    password: 123456
+    pool:
+      max-active: 100
+      max-idle: 10
+      min-idle: 0
+      max-wait: 100000
+    timeout: 0
+    database: 2
 
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
